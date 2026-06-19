@@ -1,0 +1,14 @@
+# ============================================================
+#  ترويسات الأمان — Cloudflare Pages (طلبك تم)
+#  مضبوطة على كل النطاقات المستخدمة فعلياً (Supabase, خطوط Google,
+#  jsdelivr/unpkg, يوتيوب/فيسبوك/OpenStreetMap, صور unsplash/التخزين)
+#  لا تكسر أي وظيفة. تحقّق من Console بعد النشر إن لزم.
+# ============================================================
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=()
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; connect-src 'self' https://*.supabase.co wss://*.supabase.co; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://www.facebook.com https://www.openstreetmap.org; media-src 'self' https:; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
